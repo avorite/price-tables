@@ -33,7 +33,9 @@
 	min-width: 620px;
 	margin: 0;
 	border-collapse: collapse;
+	color: #202833;
 	font-size: 14px;
+	font-weight: 500;
 	line-height: 1.35;
 }
 
@@ -49,13 +51,15 @@
 .wvpt-price-table tr:first-child td,
 .wvpt-price-table tr:first-child th {
 	background: #f4f7fb;
+	color: #111827;
 	font-weight: 700;
 }
 
 .wvpt-price-table td:first-child,
 .wvpt-price-table th:first-child {
 	text-align: left;
-	font-weight: 600;
+	color: #273142;
+	font-weight: 700;
 }
 
 .wvpt-price-table .is-empty {
