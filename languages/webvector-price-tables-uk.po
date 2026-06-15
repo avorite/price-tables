@@ -1,0 +1,65 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Price Tables 1.0.1\n"
+"PO-Revision-Date: 2026-06-15 09:39+0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uk\n"
+
+msgid "Price Tables"
+msgstr "Таблиці цін"
+
+msgid "Price Table"
+msgstr "Таблиця цін"
+
+msgid "Add New Price Table"
+msgstr "Додати нову таблицю цін"
+
+msgid "Edit Price Table"
+msgstr "Редагувати таблицю цін"
+
+msgid "New Price Table"
+msgstr "Нова таблиця цін"
+
+msgid "View Price Table"
+msgstr "Переглянути таблицю цін"
+
+msgid "Search Price Tables"
+msgstr "Шукати таблиці цін"
+
+msgid "No Price Tables found"
+msgstr "Таблиць цін не знайдено"
+
+msgid "No Price Tables found in Trash"
+msgstr "У кошику таблиць цін не знайдено"
+
+msgid "Price Table Settings"
+msgstr "Налаштування таблиці цін"
+
+msgid "Insufficient permissions."
+msgstr "Недостатньо прав доступу."
+
+msgid "Show on site"
+msgstr "Показувати на сайті"
+
+msgid "Categories"
+msgstr "Категорії"
+
+msgid "Hold Ctrl/Cmd to select multiple categories. Products in child categories also inherit parent table matches."
+msgstr "Утримуйте Ctrl/Cmd, щоб вибрати кілька категорій. Товари в дочірніх категоріях також отримують таблиці, призначені батьківським категоріям."
+
+msgid "Shown"
+msgstr "Показується"
+
+msgid "Yes"
+msgstr "Так"
+
+msgid "No"
+msgstr "Ні"
+
+msgid "Print Prices"
+msgstr "Ціни на нанесення"
+
+msgid "Shows editable print price tables on WooCommerce product pages by selected categories."
+msgstr "Показує редаговані таблиці цін на нанесення на сторінках товарів WooCommerce за вибраними категоріями."

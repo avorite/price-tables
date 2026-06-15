@@ -14,16 +14,16 @@ class WVPT_Price_Tables {
 			self::POST_TYPE,
 			array(
 				'labels' => array(
-					'name'               => 'Price Tables',
-					'singular_name'      => 'Price Table',
-					'add_new_item'       => 'Add New Price Table',
-					'edit_item'          => 'Edit Price Table',
-					'new_item'           => 'New Price Table',
-					'view_item'          => 'View Price Table',
-					'search_items'       => 'Search Price Tables',
-					'not_found'          => 'No Price Tables found',
-					'not_found_in_trash' => 'No Price Tables found in Trash',
-					'menu_name'          => 'Price Tables',
+					'name'               => __( 'Price Tables', WVPT_TEXT_DOMAIN ),
+					'singular_name'      => __( 'Price Table', WVPT_TEXT_DOMAIN ),
+					'add_new_item'       => __( 'Add New Price Table', WVPT_TEXT_DOMAIN ),
+					'edit_item'          => __( 'Edit Price Table', WVPT_TEXT_DOMAIN ),
+					'new_item'           => __( 'New Price Table', WVPT_TEXT_DOMAIN ),
+					'view_item'          => __( 'View Price Table', WVPT_TEXT_DOMAIN ),
+					'search_items'       => __( 'Search Price Tables', WVPT_TEXT_DOMAIN ),
+					'not_found'          => __( 'No Price Tables found', WVPT_TEXT_DOMAIN ),
+					'not_found_in_trash' => __( 'No Price Tables found in Trash', WVPT_TEXT_DOMAIN ),
+					'menu_name'          => __( 'Price Tables', WVPT_TEXT_DOMAIN ),
 				),
 				'public'          => false,
 				'show_ui'         => true,
@@ -87,7 +87,7 @@ class WVPT_Price_Tables {
 	public static function add_meta_boxes() {
 		add_meta_box(
 			'wvpt_settings',
-			'Price Table Settings',
+			__( 'Price Table Settings', WVPT_TEXT_DOMAIN ),
 			array( __CLASS__, 'render_settings_metabox' ),
 			self::POST_TYPE,
 			'side',
@@ -105,16 +105,16 @@ class WVPT_Price_Tables {
 		<p>
 			<label>
 				<input type="checkbox" name="wvpt_enabled" value="yes" <?php checked( 'yes' === $enabled || '' === $enabled ); ?>>
-				Show on site
+				<?php esc_html_e( 'Show on site', WVPT_TEXT_DOMAIN ); ?>
 			</label>
 		</p>
-		<p><strong>Categories</strong></p>
+		<p><strong><?php esc_html_e( 'Categories', WVPT_TEXT_DOMAIN ); ?></strong></p>
 		<select class="wvpt-categories" name="wvpt_category_ids[]" multiple size="14">
 			<?php foreach ( $terms as $term ) : ?>
 				<option value="<?php echo esc_attr( $term->term_id ); ?>" <?php selected( in_array( (int) $term->term_id, $category_ids, true ) ); ?>><?php echo esc_html( $term->label ); ?></option>
 			<?php endforeach; ?>
 		</select>
-		<p class="description">Hold Ctrl/Cmd to select multiple categories. Products in child categories also inherit parent table matches.</p>
+		<p class="description"><?php esc_html_e( 'Hold Ctrl/Cmd to select multiple categories. Products in child categories also inherit parent table matches.', WVPT_TEXT_DOMAIN ); ?></p>
 		<?php
 	}
 
@@ -136,15 +136,15 @@ class WVPT_Price_Tables {
 	}
 
 	public static function admin_columns( $columns ) {
-		$columns['wvpt_enabled']    = 'Shown';
-		$columns['wvpt_categories'] = 'Categories';
+		$columns['wvpt_enabled']    = __( 'Shown', WVPT_TEXT_DOMAIN );
+		$columns['wvpt_categories'] = __( 'Categories', WVPT_TEXT_DOMAIN );
 
 		return $columns;
 	}
 
 	public static function render_admin_column( $column, $post_id ) {
 		if ( 'wvpt_enabled' === $column ) {
-			echo esc_html( 'yes' === get_post_meta( $post_id, self::META_ENABLED, true ) ? 'Yes' : 'No' );
+			echo esc_html( 'yes' === get_post_meta( $post_id, self::META_ENABLED, true ) ? __( 'Yes', WVPT_TEXT_DOMAIN ) : __( 'No', WVPT_TEXT_DOMAIN ) );
 			return;
 		}
 
@@ -172,7 +172,7 @@ class WVPT_Price_Tables {
 		}
 
 		echo '<section class="wvpt-product-price-tables">';
-		echo '<h2>Ціни на нанесення</h2>';
+		echo '<h2>' . esc_html__( 'Print Prices', WVPT_TEXT_DOMAIN ) . '</h2>';
 
 		foreach ( $matched as $post ) {
 			echo '<article class="wvpt-product-price-table">';
@@ -219,7 +219,7 @@ class WVPT_Price_Tables {
 	}
 
 	private static function insert_table_post( $table ) {
-		$title = isset( $table['title'] ) ? sanitize_text_field( $table['title'] ) : 'Price Table';
+		$title = isset( $table['title'] ) ? sanitize_text_field( $table['title'] ) : __( 'Price Table', WVPT_TEXT_DOMAIN );
 		$html  = isset( $table['html'] ) ? self::sanitize_table_html( $table['html'] ) : '';
 
 		if ( '' === trim( wp_strip_all_tags( $html ) ) ) {
