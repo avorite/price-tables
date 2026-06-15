@@ -248,7 +248,7 @@ class WVPT_Price_Tables {
 
 	private static function default_tables() {
 		return array(
-			self::default_table( 'УФ друк: ручки, олівці, флешки', 'pens-pencils-flash.html', array( 'metaleva-ruchka', 'plastikova-ruchka', 'eko-ruchka', 'druk-na-ruchkah', 'brenduvannya-ruchok' ) ),
+			self::default_table( 'УФ друк: ручки, олівці, флешки', 'pens-pencils-flash.html', array( 'metaleva-ruchka', 'plastikova-ruchka', 'eko-ruchka', 'olivtsi', 'druk-na-ruchkah', 'brenduvannya-ruchok' ) ),
 			self::default_table( 'УФ друк: пляшки, термоси, чашки', 'bottles-thermos-cups.html', array( 'druk-na-plyashkah', 'druk-na-termokruzhkah', 'druk-na-termosah' ) ),
 			self::default_table( 'Брендування одягу', 'clothing-branding.html', array( 'druk-na-zhyletakh', 'druk-na-svitshotakh', 'druk-na-tolstovkakh-khudi' ) ),
 			self::default_table( 'Брендування кепок', 'caps-branding.html', array( 'druk-na-kepkakh' ) ),
