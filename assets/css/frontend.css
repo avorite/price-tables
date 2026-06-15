@@ -1,0 +1,70 @@
+.wvpt-product-price-tables {
+	clear: both;
+	max-width: 1180px;
+	margin: 28px auto 0;
+	padding: 0 15px;
+}
+
+.wvpt-product-price-tables h2 {
+	margin: 0 0 18px;
+	font-size: 24px;
+	line-height: 1.3;
+}
+
+.wvpt-product-price-table {
+	margin: 0 0 24px;
+}
+
+.wvpt-product-price-table h3 {
+	margin: 0 0 10px;
+	font-size: 18px;
+	line-height: 1.35;
+}
+
+.wvpt-price-table-scroll {
+	overflow-x: auto;
+	border: 1px solid #e2e5e9;
+	border-radius: 8px;
+	background: #fff;
+}
+
+.wvpt-price-table {
+	width: 100%;
+	min-width: 620px;
+	margin: 0;
+	border-collapse: collapse;
+	font-size: 14px;
+	line-height: 1.35;
+}
+
+.wvpt-price-table th,
+.wvpt-price-table td {
+	padding: 10px 12px;
+	border: 1px solid #e2e5e9;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.wvpt-price-table th,
+.wvpt-price-table tr:first-child td,
+.wvpt-price-table tr:first-child th {
+	background: #f4f7fb;
+	font-weight: 700;
+}
+
+.wvpt-price-table td:first-child,
+.wvpt-price-table th:first-child {
+	text-align: left;
+	font-weight: 600;
+}
+
+.wvpt-price-table .is-empty {
+	background: #fafafa;
+	color: transparent;
+}
+
+@media (max-width: 480px) {
+	.wvpt-product-price-tables {
+		padding: 0;
+	}
+}

@@ -1,0 +1,21 @@
+.post-type-wvpt_price_table .wvpt-categories {
+	width: 100%;
+	min-height: 260px;
+}
+
+.post-type-wvpt_price_table #postdivrich .wp-editor-area {
+	min-height: 260px;
+	font-family: Consolas, Monaco, monospace;
+}
+
+.post-type-wvpt_price_table .wp-editor-container table.wvpt-price-table,
+.post-type-wvpt_price_table .wp-editor-container table.wvpt-price-table td,
+.post-type-wvpt_price_table .wp-editor-container table.wvpt-price-table th {
+	border: 1px solid #dcdcde;
+	border-collapse: collapse;
+}
+
+.post-type-wvpt_price_table .wp-editor-container table.wvpt-price-table td,
+.post-type-wvpt_price_table .wp-editor-container table.wvpt-price-table th {
+	padding: 8px 10px;
+}
