@@ -252,7 +252,8 @@ class WVPT_Price_Tables {
 			self::default_table( 'УФ друк: пляшки, термоси, чашки', 'bottles-thermos-cups.html', array( 'druk-na-plyashkah', 'druk-na-termokruzhkah', 'druk-na-termosah' ) ),
 			self::default_table( 'Брендування одягу', 'clothing-branding.html', array( 'druk-na-zhyletakh', 'druk-na-svitshotakh', 'druk-na-tolstovkakh-khudi' ) ),
 			self::default_table( 'Брендування кепок', 'caps-branding.html', array( 'druk-na-kepkakh' ) ),
-			self::default_table( 'Блокноти, щоденники, павербанки', 'notebooks-diaries-powerbanks.html', array( 'brenduvannya-shhodennikiv-bloknotiv', 'brenduvannya-bloknotiv', 'brenduvannya-godynnykiv', 'brenduvannya-zaryadnyh-prystroyiv' ) ),
+			self::default_table( 'Блокноти, щоденники', 'notebooks-diaries-powerbanks.html', array( 'brenduvannya-shhodennikiv-bloknotiv', 'brenduvannya-bloknotiv' ) ),
+			self::default_table( 'Павербанки', 'powerbanks.html', array( 'brenduvannya-zaryadnyh-prystroyiv' ) ),
 		);
 	}
 

@@ -3,7 +3,7 @@
  * Plugin Name: Price Tables
  * Plugin URI:  https://webvector.space/
  * Description: Shows editable print price tables on WooCommerce product pages by selected categories.
- * Version:     1.0.3
+ * Version:     1.0.4
  * Author:      WebVector
  * Author URI:  https://webvector.space/
  * Text Domain: webvector-price-tables
@@ -15,7 +15,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'WVPT_VERSION', '1.0.3' );
+define( 'WVPT_VERSION', '1.0.4' );
 define( 'WVPT_PLUGIN_FILE', __FILE__ );
 define( 'WVPT_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'WVPT_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
