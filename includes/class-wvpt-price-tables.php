@@ -184,6 +184,24 @@ class WVPT_Price_Tables {
 		echo '</section>';
 	}
 
+	public static function add_product_tab( $tabs ) {
+		if ( ! function_exists( 'is_product' ) || ! is_product() ) {
+			return $tabs;
+		}
+
+		if ( empty( self::get_matching_tables_for_product( get_queried_object_id() ) ) ) {
+			return $tabs;
+		}
+
+		$tabs['wvpt_price_tables'] = array(
+			'title'    => __( 'Print Prices', WVPT_TEXT_DOMAIN ),
+			'priority' => 5,
+			'callback' => array( __CLASS__, 'render_product_tables' ),
+		);
+
+		return $tabs;
+	}
+
 	private static function get_matching_tables_for_product( $product_id ) {
 		$product_category_ids = self::get_product_category_ids_with_ancestors( $product_id );
 
